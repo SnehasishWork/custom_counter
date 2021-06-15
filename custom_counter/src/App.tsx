@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import CounterContainer from "./container/CounterConatiner";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CounterContainer
+        maxValue={100}
+        initialValue={5}
+        onValueChange={(value) => {
+          console.log(value);
+        }}
+      ></CounterContainer>
+      <div>Current Max Value: 100</div>
+      <div>Current Initial Value: 5</div>
     </div>
   );
 }

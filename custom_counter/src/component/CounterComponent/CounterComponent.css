@@ -1,0 +1,91 @@
+/* Container Styles */
+.counter-container {
+  margin-top: 37px;
+  margin-bottom: 37px;
+  margin-left: 38.5px;
+  margin-right: 38.5px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+/* Input Box Styles */
+.counter-input::-webkit-outer-spin-button,
+.counter-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.counter-input {
+  -moz-appearance: textfield;
+}
+.counter-input {
+  height: 56px;
+  width: 60px;
+  padding: 0px;
+  border-top: 1px solid #b24242;
+  border-bottom: 1px solid #b24242;
+  border-left: 0px;
+  border-right: 0px;
+  box-sizing: border-box;
+  line-height: 54px;
+  text-align: center;
+  background-color: #fbe8e8;
+  font-size: 21px;
+  font-weight: 700;
+  color: #b24242;
+}
+
+.counter-input:focus,
+.counter-input:hover {
+  outline: 0px;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-left: 1px solid #b24242;
+  border-right: 1px solid #b24242;
+  line-height: 52px;
+}
+
+/* Decrement Button Styles */
+.decrement-button {
+  height: 56px;
+  width: 60px;
+  background-color: #ffffff;
+  border: 1px solid #b24242;
+  border-radius: 8px 0px 0px 8px;
+  font-size: 21px;
+  font-weight: 700;
+  color: #b24242;
+  line-height: 54px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.decrement-button:focus,
+.decrement-button:hover {
+  outline: 0px;
+  border-width: 2px;
+  line-height: 52px;
+}
+
+/* Increment Button Styles */
+.increment-button {
+  height: 56px;
+  width: 60px;
+  background-color: #b24242;
+  border: 1px solid #b24242;
+  border-radius: 0px 8px 8px 0px;
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 54px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.increment-button:focus,
+.increment-button:hover {
+  outline: 0px;
+  border-width: 2px;
+  line-height: 52px;
+  border-color: #5c2323;
+}

@@ -7,9 +7,6 @@ const CounterComponent = (props: CounterComponentProps) => {
       <button
         className="decrement-button"
         onClick={(e) => {
-          if (props.onValueChange) {
-            props.onValueChange(props.counterValue - 1);
-          }
           props.setCounterValue(props.counterValue - 1);
         }}
       >
@@ -25,9 +22,6 @@ const CounterComponent = (props: CounterComponentProps) => {
             +e.target.value <= props.maxValue
               ? +e.target.value
               : props.maxValue;
-          if (props.onValueChange) {
-            props.onValueChange(value);
-          }
           props.setCounterValue(value);
         }}
       />
@@ -35,9 +29,6 @@ const CounterComponent = (props: CounterComponentProps) => {
         className="increment-button"
         onClick={(e) => {
           if (props.counterValue < props.maxValue) {
-            if (props.onValueChange) {
-              props.onValueChange(props.counterValue + 1);
-            }
             props.setCounterValue(props.counterValue + 1);
           }
         }}
@@ -52,7 +43,8 @@ export default CounterComponent;
 
 interface CounterComponentProps {
   maxValue: number;
-  onValueChange?: (value: number) => void;
   counterValue: number;
   setCounterValue: (value: number) => void;
 }
+
+//deepak@quicksell.co
